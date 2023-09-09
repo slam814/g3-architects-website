@@ -8,6 +8,10 @@
 
   }
 
+  .text-lightgray{
+      color: #727272;
+  }
+
 .btn-primary{
     border-radius: 8px;
     background-color: #FF900E;
@@ -52,7 +56,7 @@ nav > li > a{
 /* banner style */
 
 .banner-content{
-    max-width: 800px;
+ max-width: 800px;
 text-align: center;
 margin: 0 auto;
     
@@ -63,10 +67,7 @@ margin: 0 auto;
     font-weight: 700;
     color: #131313;
 }
-.banner-discription{
-    color: #727272;
 
-}
 
 .banner img{
     margin-top: 20px;
@@ -76,43 +77,18 @@ margin: 0 auto;
 
 
 
-/* Respnsive media Queries */
-/* Mobile devices */
-@media screen and (max-width: 576px) {
-    header{
-        padding: 20px;
-    } 
-    nav{
-        flex-direction: column;
-    }
-
-
-}
-
-
-/* Tablet or medum Devices */
-
-@media screen and (min-width: 576px) and (max-width: 960px) {
-   
-    header{ 
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-
-
-}
-
 /* main style */
 main{
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width:  1440px;
+    margin: 70px auto;
 }
 .teams-container{
     display: flex;
     align-items: center;
 }
+/* .teams-img-container img{
+    width: 100%;
+} */
 .teams-img-container{
 
     display: grid;
@@ -131,7 +107,6 @@ main{
 }
 
 .teams-titel .quick-list{
-    color: #727272;
     font-weight: 500;
 }
 
@@ -139,3 +114,85 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ____________________________________________ */
+/* ____________________________________________ */
+/* ____________________________________________ */
+
+
+/* Respnsive media Queries */
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    } 
+    nav, .teams-container{
+
+        flex-direction: column;
+    }
+
+    .teams-img-container{
+        padding-right: 1px;
+        padding-left: 1px;
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content{
+        padding-right: 1px;
+        padding-left: 1px;
+        text-align: center;
+    }
+}
+
+
+
+/* ____________________________________________ */
+/* ____________________________________________ */
+/* ____________________________________________ */
+
+
+/* Tablet or medum Devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+   
+    header{ 
+        padding: 50px;
+    }
+    nav, .teams-container {
+        flex-direction: column;
+    }
+    .teams-img-container{
+        padding-right: 1px;
+        padding-left: 1px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .teams-content{
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+}
+
+/* ____________________________________________ */
+/* ____________________________________________ */
